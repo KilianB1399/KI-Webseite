@@ -82,6 +82,7 @@ html, body {
     padding: 0;
     height: 100%;
     overflow-x: hidden;
+    scale: 1;
 }
 
 header {
@@ -126,10 +127,16 @@ p {
 
 .textbox {
     background-color: #f0f0f0;
-    border-radius: 25px;
-    margin: 25px;
-    outline: auto;
-    outline-color: #333;
+    border-radius: 10px; /* reduziert die Rundung */
+    padding: 8px; /* reduziert den Innenabstand */
+    margin: 15px; /* reduziert den Außenabstand */
+    outline: 1px solid #333; /* dünnerer Rahmen */
+    font-size: 0.95em; /* verringert die Schriftgröße leicht */
+    font-weight: normal; /* entfernt Fettdruck */
+}
+
+.textbox p {
+    font-weight: normal;
 }
 
 /* Tabelle */
